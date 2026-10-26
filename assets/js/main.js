@@ -286,14 +286,14 @@
 
   if (window.location.protocol === 'file:') {
     document.addEventListener('click', function (event) {
-      var link = event.target.closest('a[href^="/"]');
+      var link = event.target.closest('a[href]');
       if (!link) return;
       var href = link.getAttribute('href');
-      if (!href || href.indexOf('//') === 0) return;
+      if (!href || /^(https?:|tel:|mailto:|#|javascript:)/i.test(href)) return;
       var parts = href.split('#');
-      var path = parts[0].replace(/^\/+|\/+$/g, '');
+      var path = parts[0].replace(/^(\.\/|\/)+|\/+$/g, '');
       var hash = parts[1] ? '#' + parts[1] : '';
-      var file = (path === '' ? 'index.html' : path + '.html') + hash;
+      var file = (path === '' ? 'index.html' : (path.endsWith('.html') ? path : path + '.html')) + hash;
       var baseDir = window.location.href.replace(/\/[^/]*$/, '/');
       event.preventDefault();
       window.location.href = baseDir + file;
