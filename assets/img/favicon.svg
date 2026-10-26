@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Ihre IT Rhein-Neckar">
+  <title>Ihre IT Rhein-Neckar</title>
+  <!-- Das vollständige Logo-Zeichen: Schildkontur, drei Knoten, Verbindungs-
+       linien und der bernsteinfarbene Mittelknoten. Linienstärken und Knoten
+       sind gegenüber dem Original kräftiger gesetzt (Kontur 15 statt 8,
+       Linien 10 statt 6), weil das Zeichen im Browser-Tab nur rund 32 Pixel
+       hoch dargestellt wird. Mit den Originalstärken wäre die Kontur dort
+       dünner als ein Pixel. -->
+  <rect width="32" height="32" rx="8" fill="#0F1B2D"/>
+  <g transform="translate(2.95 2.95) scale(0.10874)">
+    <path d="M120 17 215 54 215 120C215 174 174 207 120 223 66 207 25 174 25 120L25 54Z"
+          fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linejoin="round"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round">
+      <path d="M120 72 120 118"/><path d="M82 150 120 118"/><path d="M158 150 120 118"/>
+    </g>
+    <circle cx="120" cy="72"  r="13" fill="#FFFFFF"/>
+    <circle cx="82"  cy="150" r="13" fill="#FFFFFF"/>
+    <circle cx="158" cy="150" r="13" fill="#FFFFFF"/>
+    <circle cx="120" cy="118" r="19" fill="#E8A33D"/>
+  </g>
+</svg>
