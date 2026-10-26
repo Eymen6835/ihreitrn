@@ -2107,7 +2107,7 @@ a.card:hover,
 }
 
 @media (min-width: 84em) {
-  .nav li:has(> .nav__link[href="/kontakt"]) { display: none; }
+  .nav li:has(> .nav__link[href="kontakt"]), .nav li:has(> .nav__link[href="/kontakt"]) { display: none; }
 }
 
 @media (min-width: 56em) {
